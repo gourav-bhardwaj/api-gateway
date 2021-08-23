@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+    kubernetes:
+      discovery:
+        all-namespaces: true
+   
+server:
+  port: 8765
+  
+  
